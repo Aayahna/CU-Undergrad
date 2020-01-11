@@ -1,0 +1,83 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ctrl_fsm IS
+	PORT(	resetn	: IN STD_LOGIC;
+			clk		: IN STD_LOGIC;
+			start		: IN STD_LOGIC;
+			loadreg	: OUT STD_LOGIC;
+			addreg	: OUT STD_LOGIC;
+			shiftreg	: OUT STD_LOGIC;
+			count		: OUT STD_LOGIC;
+			busy		: OUT STD_LOGIC;
+			done		: OUT STD_LOGIC
+	);
+END ctrl_fsm;
+
+ARCHITECTURE behavior OF ctrl_fsm IS
+	--The Moore state machine will be specified
+	TYPE ctrl_fsm IS (RESET, LOAD, ADD, SHIFT, FINISH);
+	SIGNAL y	: ctrl_fsm;
+	
+BEGIN
+	--State and output assignments made
+	PROCESS(resetn, clk)
+	BEGIN
+		IF resetn='0' THEN
+			y <= RESET;
+		ELSIF RISING_EDGE(clk) THEN
+			CASE y IS
+				WHEN RESET =>
+					loadreg <= '0';
+					addreg <= '0';
+					shiftreg <= '0';
+					busy <= '0';
+					done <= '0';
+					
+					IF start='1' THEN 
+						y <= LOAD;
+						loadreg <= '1';
+					ELSE
+						y <= RESET;
+					END IF;
+				
+				WHEN LOAD =>
+					loadreg <= '1';
+					addreg <= '0';
+					shiftreg <= '0';
+					busy <= '1';
+					done <= '0';
+					
+					y <= ADD;
+				
+				WHEN ADD =>
+					loadreg <= '0';
+					addreg <= '1';
+					shiftreg <= '0';
+					busy <= '1';
+					done <= '0';
+					
+					y <= SHIFT;
+				
+				WHEN SHIFT =>
+					loadreg <= '0';
+					addreg <= '0';
+					shiftreg <= '1';
+					busy <= '1';
+					done <= '0';
+					
+					--If the machine is still adding then y <= ADD
+					--If the machine is done adding then y <= FINISH
+				
+				WHEN FINISH =>
+					loadreg <= '0';
+					addreg <= '0';
+					shiftreg <= '0';
+					busy <= '1';
+					done <= '1';
+					
+					y <= RESET;
+			END CASE;
+		END IF;
+	END PROCESS;
+END behavior;		

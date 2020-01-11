@@ -1,0 +1,322 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim
+Eaddsub
+Z1 w1553840314
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd
+Z5 FC:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd
+l0
+L4
+VhP=RR1cMW`Wng?hQWcfzT1
+!s100 gzBzT^=>`4;nZ58OJ<d`O1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1553840862
+!i10b 1
+Z8 !s108 1553840862.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd|
+Z10 !s107 C:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Amixed
+R2
+R3
+DEx4 work 6 addsub 0 22 hP=RR1cMW`Wng?hQWcfzT1
+l31
+L15
+V34h3^SAXc8jQTce=n1E6M0
+!s100 zYXR0P1hL:[g`cDl]kn5k1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Econtrolfsm
+Z13 w1553829361
+R2
+R3
+R0
+Z14 8C:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd
+Z15 FC:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd
+l0
+L4
+VGE5[miK7KTbI`]VjT3Y`42
+!s100 G?<FRJ@h6<odGbZM]ic;D2
+R6
+31
+Z16 !s110 1553840861
+!i10b 1
+Z17 !s108 1553840861.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd|
+Z19 !s107 C:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd|
+!i113 1
+R11
+R12
+Amixed
+R2
+R3
+DEx4 work 10 controlfsm 0 22 GE5[miK7KTbI`]VjT3Y`42
+l25
+L18
+VjIVKE8I@XbP:b`^74`AXL1
+!s100 JXkP:CTn[=lbL_5nalE`E1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Efulladder
+Z20 w1548787971
+R2
+R3
+R0
+Z21 8C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd
+Z22 FC:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd
+l0
+L4
+VJ2PYCZllK15CCKf^AcjlE2
+!s100 STQHK38BWIJkFJ=_iGIjf3
+R6
+31
+R16
+!i10b 1
+Z23 !s108 1553840860.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd|
+Z25 !s107 C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 9 fulladder 0 22 J2PYCZllK15CCKf^AcjlE2
+l11
+L10
+VgjRjZ1;Nn6l12?[cIF:PA3
+!s100 a44_=ZRc[zz=KilBB3D=43
+R6
+31
+R16
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Emultiplexer
+Z26 w1553755100
+R2
+R3
+R0
+Z27 8C:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd
+Z28 FC:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd
+l0
+L4
+Vh9AnSoCLh2ND`m`T2zSH43
+!s100 IPSEzXPT2TJ:`dDNh58IC1
+R6
+31
+R16
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd|
+Z30 !s107 C:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 11 multiplexer 0 22 h9AnSoCLh2ND`m`T2zSH43
+l22
+L21
+VaMl>FaH11JXZLU?k4ZlV]0
+!s100 3?d0FQ=>O5X6KbQ;Bz7<i0
+R6
+31
+R16
+!i10b 1
+R17
+R29
+R30
+!i113 1
+R11
+R12
+Eprocessor
+Z31 w1553840312
+R2
+R3
+R0
+Z32 8C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd
+Z33 FC:/intelFPGA_lite/18.1/Lab 4/Processor.vhd
+l0
+L5
+VJ?HYG?3TO<>VHkB=em]iA3
+!s100 izNoEA4cQCQgVOnDPUAXX1
+R6
+31
+R7
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd|
+Z35 !s107 C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 9 processor 0 22 J?HYG?3TO<>VHkB=em]iA3
+l80
+L15
+VlOnDQH6V9C1g_g][Y^=]I2
+!s100 =]jZgkd9CbAkAD@YOazfc3
+R6
+31
+R7
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Eprocessor_vhd_tst
+Z36 w1553837065
+R2
+R3
+R0
+Z37 8C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht
+Z38 FC:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht
+l0
+L30
+V17;6eZ4K]BnJa_[`Ba^mh1
+!s100 9C[cU=EYHok7CdOliF95E1
+R6
+31
+R7
+!i10b 1
+R8
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht|
+Z40 !s107 C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht|
+!i113 1
+R11
+R12
+Aprocessor_arch
+R2
+R3
+DEx4 work 17 processor_vhd_tst 0 22 17;6eZ4K]BnJa_[`Ba^mh1
+l51
+L32
+VDV42So6SLdnGPi9HHZ36L3
+!s100 zW2jRXH^0ifQ]hAj=:28;3
+R6
+31
+R7
+!i10b 1
+R8
+R39
+R40
+!i113 1
+R11
+R12
+Ercan
+Z41 w1553840308
+R2
+R3
+R0
+Z42 8C:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd
+Z43 FC:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd
+l0
+L4
+VYzNCLiNXgehXoaLlPC=Gk0
+!s100 D@9a0LcinaUj=2g_8nj7a0
+R6
+31
+R16
+!i10b 1
+R17
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd|
+Z45 !s107 C:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 4 rcan 0 22 YzNCLiNXgehXoaLlPC=Gk0
+l29
+L14
+VaBdEVL^z:@J:X;cOGg?AP1
+!s100 <<6KB<3JX@gL5WjPVfHI02
+R6
+31
+R16
+!i10b 1
+R17
+R44
+R45
+!i113 1
+R11
+R12
+Eregn
+Z46 w1553753002
+R2
+R3
+R0
+Z47 8C:/intelFPGA_lite/18.1/Lab 4/regN.vhd
+Z48 FC:/intelFPGA_lite/18.1/Lab 4/regN.vhd
+l0
+L4
+VX@kbl:NZd`<EoK2=HCD@`3
+!s100 kGXMza9:fE[MJ<RJdYZ@<3
+R6
+31
+R16
+!i10b 1
+R17
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 4/regN.vhd|
+Z50 !s107 C:/intelFPGA_lite/18.1/Lab 4/regN.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 4 regn 0 22 X@kbl:NZd`<EoK2=HCD@`3
+l13
+L12
+Vdcc4Z[;4::6R1LdVAHcC41
+!s100 ^9Y1]A0In_XmNTJemikQM1
+R6
+31
+R16
+!i10b 1
+R17
+R49
+R50
+!i113 1
+R11
+R12

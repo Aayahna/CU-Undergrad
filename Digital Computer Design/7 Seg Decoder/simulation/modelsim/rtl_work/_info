@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/7 Seg Decoder/simulation/modelsim
+Edecoder7seg
+Z1 w1548736322
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd
+Z5 FC:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd
+l0
+L4
+VNnI1ggcF85``k64`9EcJ;1
+!s100 AO3FFdA@878`giQKNMhNN0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1548736824
+!i10b 1
+Z8 !s108 1548736824.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd|
+Z10 !s107 C:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 11 decoder7seg 0 22 NnI1ggcF85``k64`9EcJ;1
+l11
+L10
+VAXS733H[3TgiY6MeT;BF@1
+!s100 LnFzkUdh3ZdT1nX_3kHme0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edecoder7seg_vhd_tst
+Z13 w1548736680
+R2
+R3
+R0
+Z14 8C:/intelFPGA_lite/18.1/7 Seg Decoder/simulation/modelsim/Decoder7Seg.vht
+Z15 FC:/intelFPGA_lite/18.1/7 Seg Decoder/simulation/modelsim/Decoder7Seg.vht
+l0
+L30
+V^8hNGHS7RMXDUVe:X7ZzS3
+!s100 5@T`7e2zKgMT=Xmk^?e720
+R6
+31
+Z16 !s110 1548736825
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/7 Seg Decoder/simulation/modelsim/Decoder7Seg.vht|
+Z18 !s107 C:/intelFPGA_lite/18.1/7 Seg Decoder/simulation/modelsim/Decoder7Seg.vht|
+!i113 1
+R11
+R12
+Adecoder7seg_arch
+R2
+R3
+DEx4 work 19 decoder7seg_vhd_tst 0 22 ^8hNGHS7RMXDUVe:X7ZzS3
+l45
+L32
+Vdf[bmO4:l;A>F7_Z3dSXm2
+!s100 Lld`:^CaHBW;6jM`lEi>j0
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12

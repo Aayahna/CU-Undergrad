@@ -1,0 +1,73 @@
+|RCA4
+a[0] => FullAdder:FullAdder1.a
+a[1] => FullAdder:FullAdder2.a
+a[2] => FullAdder:FullAdder3.a
+a[3] => FullAdder:FullAdder4.a
+b[0] => FullAdder:FullAdder1.b
+b[1] => FullAdder:FullAdder2.b
+b[2] => FullAdder:FullAdder3.b
+b[3] => FullAdder:FullAdder4.b
+cin => FullAdder:FullAdder1.ci
+s[0] << FullAdder:FullAdder1.s
+s[1] << FullAdder:FullAdder2.s
+s[2] << FullAdder:FullAdder3.s
+s[3] << FullAdder:FullAdder4.s
+cout << FullAdder:FullAdder4.co
+
+
+|RCA4|FullAdder:FullAdder1
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA4|FullAdder:FullAdder2
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA4|FullAdder:FullAdder3
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RCA4|FullAdder:FullAdder4
+ci => s.IN1
+ci => co.IN0
+ci => co.IN0
+a => s.IN0
+a => co.IN0
+a => co.IN1
+b => s.IN1
+b => co.IN1
+b => co.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,192 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Processor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:40 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture dataflow of FullAdder
+# End time: 02:27:41 on Mar 29,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/regN.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:41 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/regN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity regN
+# -- Compiling architecture behavior of regN
+# End time: 02:27:41 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:41 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/multiplexer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer
+# -- Compiling architecture behavior of multiplexer
+# End time: 02:27:41 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:41 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/controlFSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlFSM
+# -- Compiling architecture mixed of controlFSM
+# End time: 02:27:41 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:41 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/RCAN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RCAN
+# -- Compiling architecture structure of RCAN
+# End time: 02:27:42 on Mar 29,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:42 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity processor
+# -- Compiling architecture structure of processor
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/Processor.vhd(117): Cannot associate port "bout" of mode OUT with port "BUSS" of mode BUFFER.
+# End time: 02:27:42 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:42 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/AddSub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AddSub
+# -- Compiling architecture mixed of AddSub
+# End time: 02:27:42 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:27:42 on Mar 29,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity processor_vhd_tst
+# -- Compiling architecture processor_arch of processor_vhd_tst
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(91): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(99): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(120): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(122): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(129): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(132): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(134): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(139): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(141): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(143): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(145): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(147): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(149): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(154): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(157): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(159): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(162): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(164): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(166): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(168): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(170): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(172): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(174): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(180): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(183): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(185): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(188): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(190): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(192): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(194): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(196): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(198): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(200): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(205): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(208): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(210): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(213): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(215): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(217): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(219): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(221): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(223): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 4/simulation/modelsim/processor.vht(225): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 02:27:42 on Mar 29,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 60
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  processor_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" processor_vhd_tst 
+# Start time: 02:27:43 on Mar 29,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.processor_vhd_tst(processor_arch)
+# Loading work.processor(structure)
+# Loading work.regn(behavior)
+# Loading work.multiplexer(behavior)
+# Loading work.addsub(mixed)
+# Loading work.rcan(structure)
+# Loading work.fulladder(dataflow)
+# Loading work.controlfsm(mixed)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/processor_vhd_tst/i1/*
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 02:32:03 on Mar 29,2019, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 0

@@ -1,0 +1,44 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+--This is a modification of the four-bit ripple carry adder made earlier in the semester
+	-- for a previous; it was modified to make the ripple carry adder function for any
+	-- number of bits by using generics
+ENTITY adder IS 
+	GENERIC(	N	: INTEGER := 8);
+	PORT(	a, b	: IN STD_LOGIC_VECTOR (N DOWNTO 0);
+			cin	: IN STD_LOGIC;
+			cout	: OUT STD_LOGIC;
+			s		: OUT STD_LOGIC_VECTOR (N DOWNTO 0)			
+	);
+END adder;
+
+ARCHITECTURE structure OF adder IS
+
+--Structure made based off the full adder
+--Will make the Nbit adder by making N different full adders connecting them to their 
+	--corresponding components in the RCAN entity using the full adder port map
+COMPONENT FullAdder
+	PORT(	ci, a, b	: IN std_logic;
+			s, co		: OUT std_logic
+	);
+END COMPONENT;
+
+SIGNAL c: STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+
+BEGIN
+		
+	G_Adder:
+	FOR i IN 0 TO N-2 GENERATE
+	
+		Adder_middle: FullAdder
+			PORT MAP(c(i),a(i+1),b(i+1),s(i+1),c(i+1));
+			
+	END GENERATE G_Adder;
+	
+	FullAdder0:	FullAdder
+		PORT MAP(cin, a(0), b(0), s(0), c(0));
+	
+	FullAdderN:	FullAdder PORT MAP(c(N-1), a(N), b(N), s(N), cout);
+	
+END structure;

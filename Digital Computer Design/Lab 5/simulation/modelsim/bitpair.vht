@@ -1,0 +1,186 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- ***************************************************************************
+-- This file contains a Vhdl test bench template that is freely editable to   
+-- suit user's needs .Comments are provided in each section to help the user  
+-- fill out necessary details.                                                
+-- ***************************************************************************
+-- Generated on "04/11/2019 22:57:12"
+                                                            
+-- Vhdl Test Bench template for design  :  bitpair
+-- 
+-- Simulation tool : ModelSim-Altera (VHDL)
+-- 
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY bitpair_vhd_tst IS
+END bitpair_vhd_tst;
+ARCHITECTURE bitpair_arch OF bitpair_vhd_tst IS
+-- constants                                                 
+-- signals                                                   
+SIGNAL busy_bp : STD_LOGIC;
+SIGNAL clk_bp : STD_LOGIC;
+SIGNAL done_bp : STD_LOGIC;
+SIGNAL multiplicand_bp : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL multiplier_bp : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL product_bp : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL resetn_bp : STD_LOGIC;
+SIGNAL start_bp : STD_LOGIC;
+COMPONENT bitpair
+	PORT (
+	busy_bp : OUT STD_LOGIC;
+	clk_bp : IN STD_LOGIC;
+	done_bp : OUT STD_LOGIC;
+	multiplicand_bp : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	multiplier_bp : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	product_bp : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	resetn_bp : IN STD_LOGIC;
+	start_bp : IN STD_LOGIC
+	);
+END COMPONENT;
+BEGIN
+	i1 : bitpair
+	PORT MAP (
+-- list connections between master ports and signals
+	busy_bp => busy_bp,
+	clk_bp => clk_bp,
+	done_bp => done_bp,
+	multiplicand_bp => multiplicand_bp,
+	multiplier_bp => multiplier_bp,
+	product_bp => product_bp,
+	resetn_bp => resetn_bp,
+	start_bp => start_bp
+	);
+init : PROCESS                                               
+-- variable declarations                                     
+BEGIN                                                        
+        -- code that executes only once                      
+WAIT;                                                       
+END PROCESS init;                                           
+always : PROCESS                                              
+-- optional sensitivity list                                  
+-- (        )                                                 
+-- variable declarations                                      
+BEGIN                                                         
+-- code executes for every event on sensitivity list
+	multiplicand_bp <= "11111101";
+	multiplier_bp <= "01011101";
+	start_bp <= '0';
+	resetn_bp <= '0';
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in RESET
+	wait for 20ns;
+	
+	resetn_bp <= '1';
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in RESET
+	wait for 20ns;
+	
+	start_bp <= '1';
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in LOAD
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in ADD 1
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in SHIFT 1
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in ADD 2
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in SHIFT 2
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in ADD 3
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in SHIFT 3
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in ADD 4
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in SHIFT 4
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in FINISH
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in RESET
+	wait for 20ns;
+	
+	start_bp <= '0';
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';			--in RESET
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';
+	wait for 20ns;
+	
+	clk_bp <= '0';
+	wait for 20ns;
+	
+	clk_bp <= '1';
+	wait for 20ns;
+	
+	
+WAIT;                                                        
+END PROCESS always;                                          
+END bitpair_arch;

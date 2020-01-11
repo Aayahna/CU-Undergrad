@@ -1,0 +1,13 @@
+
+State Machine - |fuel_machine|y_present
+Name y_present.WALKING y_present.REFUELING y_present.EMPTY y_present.DRIVING3 y_present.ONE_THIRD y_present.DRIVING2 y_present.TWO_THIRDS y_present.DRIVING1 y_present.FULL y_present.RESET 
+y_present.RESET 0 0 0 0 0 0 0 0 0 0 
+y_present.FULL 0 0 0 0 0 0 0 0 1 1 
+y_present.DRIVING1 0 0 0 0 0 0 0 1 0 1 
+y_present.TWO_THIRDS 0 0 0 0 0 0 1 0 0 1 
+y_present.DRIVING2 0 0 0 0 0 1 0 0 0 1 
+y_present.ONE_THIRD 0 0 0 0 1 0 0 0 0 1 
+y_present.DRIVING3 0 0 0 1 0 0 0 0 0 1 
+y_present.EMPTY 0 0 1 0 0 0 0 0 0 1 
+y_present.REFUELING 0 1 0 0 0 0 0 0 0 1 
+y_present.WALKING 1 0 0 0 0 0 0 0 0 1 

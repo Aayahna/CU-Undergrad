@@ -1,0 +1,120 @@
+{
+  "kernels":
+  [
+    {
+      "name":"comparator_kernel"
+      , "bbtables":
+      [
+        {
+          "header":
+          [
+            {
+              "data":
+              [
+                {
+                  "value":"entry"
+                  , "colspan":2
+                }
+                , {
+                  "value":"Resources"
+                  , "colspan":4
+                }
+              ]
+            }
+            , {
+              "data":
+              [
+                {
+                  "value":"Operations"
+                  , "colspan":2
+                }
+                , "LEs"
+                , "FFs"
+                , "RAMs"
+                , "DSPs"
+              ]
+            }
+          ]
+          , "body":
+          [
+            {
+              "data":
+              [
+                {
+                  "value":"comparator_cl.cl:12"
+                  , "file":1
+                  , "line":12
+                  , "colspan":2
+                }
+                , "413"
+                , "370"
+                , "13"
+                , "0"
+              ]
+            }
+            , {
+              "data":
+              [
+                {
+                  "value":"comparator_cl.cl:13"
+                  , "file":1
+                  , "line":13
+                  , "colspan":2
+                }
+                , "417"
+                , "370"
+                , "13"
+                , "0"
+              ]
+            }
+            , {
+              "data":
+              [
+                {
+                  "value":"comparator_cl.cl:14"
+                  , "file":1
+                  , "line":14
+                  , "colspan":2
+                }
+                , "1242"
+                , "1793"
+                , "16"
+                , "0"
+              ]
+            }
+            , {
+              "data":
+              [
+                {
+                  "value":"comparator_cl.cl:16"
+                  , "file":1
+                  , "line":16
+                  , "colspan":2
+                }
+                , "1"
+                , "1"
+                , "0"
+                , "0"
+              ]
+            }
+            , {
+              "data":
+              [
+                {
+                  "value":"No Source Line"
+                  , "file":0
+                  , "line":0
+                  , "colspan":2
+                }
+                , "260"
+                , "552"
+                , "2"
+                , "0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

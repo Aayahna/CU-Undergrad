@@ -1,0 +1,7 @@
+
+State Machine - |processor_board|processor:board|controlFSM:ControlUnit|y
+Name y.T3 y.T2 y.T1 y.T0 
+y.T0 0 0 0 0 
+y.T1 0 0 1 1 
+y.T2 0 1 0 1 
+y.T3 1 0 0 1 

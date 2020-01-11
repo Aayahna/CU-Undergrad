@@ -1,0 +1,83 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY fuel_machine IS
+	PORT(	clk, resetn, w: IN std_logic;
+			z:	OUT std_logic
+	);
+END fuel_machine;
+
+ARCHITECTURE behavior OF fuel_machine IS
+	--	Signal Declarations for Present and Next States
+	SIGNAL y_present, y_next: std_logic_vector(3 DOWNTO 0);
+	
+	--	State Encodings for the 10 states; done in gray code 
+	CONSTANT RESET			: std_logic_vector(3 DOWNTO 0) := "0000";
+	CONSTANT FULL			: std_logic_vector(3 DOWNTO 0) := "0001";
+	CONSTANT DRIVING1		: std_logic_vector(3 DOWNTO 0) := "0011";
+	CONSTANT TWO_THIRDS	: std_logic_vector(3 DOWNTO 0) := "0010";
+	CONSTANT DRIVING2		: std_logic_vector(3 DOWNTO 0) := "0101";
+	CONSTANT ONE_THIRD	: std_logic_vector(3 DOWNTO 0) := "0111";
+	CONSTANT DRIVING3		: std_logic_vector(3 DOWNTO 0) := "0110";
+	CONSTANT EMPTY			: std_logic_vector(3 DOWNTO 0) := "0100";
+	CONSTANT REFUELING	: std_logic_vector(3 DOWNTO 0) := "1100";
+	CONSTANT WALKING		: std_logic_vector(3 DOWNTO 0) := "1101"; 
+
+BEGIN
+	
+	PROCESS(w, y_present)
+	BEGIN
+		CASE y_present IS
+			WHEN RESET =>
+				y_next <= FULL;
+				
+			WHEN FULL =>
+				IF w='0' THEN
+					y_next <= DRIVING1;
+				ELSE
+					y_next <= REFUELING;
+			
+			WHEN DRIVING1 =>
+				y_next <= TWO_THIRDS;
+			
+			WHEN TWO_THIRDS =>
+				IF w='0' THEN
+					y_next <= DRIVING2;
+				ELSE
+					y_next <= REFUELING;
+			
+			WHEN DRIVING2 =>
+				y_next <= ONE_THIRD;
+			
+			WHEN ONE_THIRD =>
+				IF w='0' THEN
+					y_next <= DRIVING3;
+				ELSE
+					y_next <= REFUELING;
+			
+			WHEN DRIVING3 =>
+				y_next <= EMPTY;
+			
+			WHEN EMPTY =>
+				y_next <= WALKING;
+			
+			WHEN WALKING =>
+				y_next <= ONE_THIRD;
+			
+			WHEN REFUELING =>
+				y_next <= FULL;
+		END CASE;
+	END PROCESS;
+	
+	PROCESS(clk, resetn)
+	BEGIN
+		IF resetn='0' THEN
+			y_present <= RESET;
+		ELSIF RISING_EDGE(clk) THEN
+			y_present <= y_next;
+		END IF;
+	END PROCESS;
+	
+	z <= '0' WHEN y_present=EMPTY ELSE '0';
+	
+END behavior;

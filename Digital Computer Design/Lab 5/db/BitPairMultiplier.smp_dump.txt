@@ -1,0 +1,8 @@
+
+State Machine - |bitpair_board|bitpair:BOARD|ctrl_fsm:CONTROLFSM|y
+Name y.FINISH y.SHIFT y.ADD y.LOAD y.RESET 
+y.RESET 0 0 0 0 0 
+y.LOAD 0 0 0 1 1 
+y.ADD 0 0 1 0 1 
+y.SHIFT 0 1 0 0 1 
+y.FINISH 1 0 0 0 1 

@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -10.452
+TNS   : -189.455
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : -8.838
+TNS   : -494.941
+
+Type  : Slow 1100mV 85C Model Setup 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : -8.416
+TNS   : -8.416
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : -7.605
+TNS   : -503.070
+
+Type  : Slow 1100mV 85C Model Hold 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -1.130
+TNS   : -3.024
+
+Type  : Slow 1100mV 85C Model Hold 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 5.715
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -64.270
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -10.344
+TNS   : -187.398
+
+Type  : Slow 1100mV 0C Model Setup 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : -8.366
+TNS   : -8.366
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : -8.227
+TNS   : -468.855
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : -7.490
+TNS   : -502.411
+
+Type  : Slow 1100mV 0C Model Hold 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -1.098
+TNS   : -3.026
+
+Type  : Slow 1100mV 0C Model Hold 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 5.703
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -58.858
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : -6.320
+TNS   : -333.252
+
+Type  : Fast 1100mV 85C Model Setup 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -5.640
+TNS   : -100.104
+
+Type  : Fast 1100mV 85C Model Setup 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : -4.352
+TNS   : -4.352
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : -4.201
+TNS   : -261.393
+
+Type  : Fast 1100mV 85C Model Hold 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -0.600
+TNS   : -1.697
+
+Type  : Fast 1100mV 85C Model Hold 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 3.337
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.343
+TNS   : -31.268
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -5.378
+TNS   : -95.981
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : -5.232
+TNS   : -273.331
+
+Type  : Fast 1100mV 0C Model Setup 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : -4.221
+TNS   : -4.221
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
+Slack : -4.092
+TNS   : -260.180
+
+Type  : Fast 1100mV 0C Model Hold 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : -0.546
+TNS   : -1.567
+
+Type  : Fast 1100mV 0C Model Hold 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 3.238
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.321
+TNS   : -29.300
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T0'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'processor:board|controlFSM:ControlUnit|y.T2'
+Slack : 0.469
+TNS   : 0.000
+
+------------------------------------------------------------

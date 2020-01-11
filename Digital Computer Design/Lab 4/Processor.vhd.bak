@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY processor IS
+	GENERIC(	N: INTEGER := 16);
+
+	PORT(	DIN					: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			CLK, RUN, RESETN	: IN STD_LOGIC;
+			BUSS					: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			DONE					: OUT STD_LOGIC
+	);
+END processor;

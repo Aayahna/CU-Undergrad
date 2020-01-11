@@ -1,0 +1,22 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity BCDadder is port(
+	A, B: IN std_logic_vector (3 downto 0);
+	CIN: IN std_logic;
+	S: OUT std_logic_vector (3 downto 0);
+	COUT: OUT std_logic_vector (3 downto 0)
+);
+
+architecture structure of BCDadder is
+
+	component RCA4	
+		port(
+			a, b: IN std_logic_vector (3 downto 0);
+			cin: IN std_logic;
+			s: OUT std_logic_vector (3 downto 0);
+			cout: OUT std_logic
+		);
+	end component;
+	
+	

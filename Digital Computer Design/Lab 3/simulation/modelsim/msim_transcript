@@ -1,0 +1,119 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do fuel_machine_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 3/fuel_machine.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:46 on Mar 05,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 3/fuel_machine.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fuel_machine
+# -- Compiling architecture behavior of fuel_machine
+# End time: 12:51:46 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:46 on Mar 05,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fuel_machine_vhd_tst
+# -- Compiling architecture fuel_machine_arch of fuel_machine_vhd_tst
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(91): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(99): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(113): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(122): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(127): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(130): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(133): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(136): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(139): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(142): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(145): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(148): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(151): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(154): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(156): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(159): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(162): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(165): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(168): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(170): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(173): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(176): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(179): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(183): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(186): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(189): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(192): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(195): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(198): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(201): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(204): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(207): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(209): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(212): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(215): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(218): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(221): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(224): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(227): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(230): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(233): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(235): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(238): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(241): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 3/simulation/modelsim/fuel_machine.vht(244): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 12:51:46 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 59
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  fuel_machine_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" fuel_machine_vhd_tst 
+# Start time: 12:51:47 on Mar 05,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fuel_machine_vhd_tst(fuel_machine_arch)
+# Loading work.fuel_machine(behavior)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/fuel_machine_vhd_tst/i1/line__19/*
+# (vish-4014) No objects found matching '/fuel_machine_vhd_tst/i1/line__19/*'.
+add wave -position insertpoint sim:/fuel_machine_vhd_tst/i1/line__80/*
+# (vish-4014) No objects found matching '/fuel_machine_vhd_tst/i1/line__80/*'.
+add wave -position insertpoint sim:/fuel_machine_vhd_tst/i1/*
+restart -f
+run -all
+# End time: 12:57:38 on Mar 05,2019, Elapsed time: 0:05:51
+# Errors: 2, Warnings: 0

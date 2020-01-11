@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : -8.304
+TNS   : -24.757
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : -8.138
+TNS   : -130.800
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 5.247
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -14.917
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : -8.246
+TNS   : -24.612
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : -7.632
+TNS   : -121.571
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 5.181
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.394
+TNS   : -13.637
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : -6.075
+TNS   : -98.860
+
+Type  : Fast 1100mV 85C Model Setup 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : -4.294
+TNS   : -12.836
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 3.168
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.346
+TNS   : -7.435
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : -4.976
+TNS   : -80.645
+
+Type  : Fast 1100mV 0C Model Setup 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : -4.173
+TNS   : -12.472
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 3.072
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.321
+TNS   : -6.891
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'bitpair:BOARD|ctrl_fsm:CONTROLFSM|y.LOAD'
+Slack : 0.474
+TNS   : 0.000
+
+------------------------------------------------------------

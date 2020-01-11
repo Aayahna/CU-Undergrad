@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/simulation/modelsim
+Efulladder
+Z1 w1548775031
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd
+Z5 FC:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd
+l0
+L4
+VJ2PYCZllK15CCKf^AcjlE2
+!s100 STQHK38BWIJkFJ=_iGIjf3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1548780396
+!i10b 1
+Z8 !s108 1548780396.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd|
+Z10 !s107 C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R2
+R3
+DEx4 work 9 fulladder 0 22 J2PYCZllK15CCKf^AcjlE2
+l11
+L10
+VdaX?^XTB_9FB_Xf<O3KbX0
+!s100 CY9R4ZzbRUUg>FmA;X@NK1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erca4
+Z13 w1548779913
+R2
+R3
+R0
+Z14 8C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd
+Z15 FC:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd
+l0
+L4
+V2cH38:ZNi;HXB<Eoo<z[_0
+!s100 ^fjl]71WJMG0UJShoZP[K2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd|
+Z17 !s107 C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 4 rca4 0 22 2cH38:ZNi;HXB<Eoo<z[_0
+l23
+L12
+V`zYoA:D7Tl>Dh2RfUTOaz2
+!s100 ]Z0_bBXjAbnhbNL@<Go[O3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Erca4_vhd_tst
+Z18 w1548780394
+R2
+R3
+R0
+Z19 8C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/simulation/modelsim/RCA4.vht
+Z20 FC:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/simulation/modelsim/RCA4.vht
+l0
+L30
+VzBmRD2fHF2N]7=<A=RzLQ0
+!s100 n9UNXG5E_Jed_KU@BI;4z2
+R6
+31
+Z21 !s110 1548780397
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/simulation/modelsim/RCA4.vht|
+Z23 !s107 C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/simulation/modelsim/RCA4.vht|
+!i113 1
+R11
+R12
+Arca4_arch
+R2
+R3
+DEx4 work 12 rca4_vhd_tst 0 22 zBmRD2fHF2N]7=<A=RzLQ0
+l49
+L32
+VFgD_A?V?SJHlf]JFC@FCo1
+!s100 ij_kCmTTUZ@=FzzSjdd?S3
+R6
+31
+R21
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12

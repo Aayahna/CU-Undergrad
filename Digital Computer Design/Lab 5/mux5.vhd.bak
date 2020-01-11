@@ -1,0 +1,43 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux5 IS
+	GENERIC(	N	: INTEGER := 8);
+	PORT(	sel		: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+			zero		: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			pos_one	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			neg_one	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			pos_two	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			neg_two	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			mux_out	: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+	);
+END mux5;
+
+ARCHITECTURE behavior OF mux5 IS
+BEGIN
+	
+	--Signal will be used as a temp holder for the output
+		--to avoid error and make sure output displayed 
+		--at the very end
+	SIGNAL temp_out	: STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+	
+	PROCESS(sel)
+	BEGIN
+		--Output based off selection by case-when process statement
+		--Done using notes from lecture L06P3, slide 10
+		CASE sel IS
+			WHEN "000" => temp_out <= zero;
+			WHEN "001" => temp_out <= pos_one;
+			WHEN "010" => temp_out <= pos_one;
+			WHEN "011" => temp_out <= pos_two;
+			WHEN "100" => temp_out <= neg_two;
+			WHEN "101" => temp_out <= neg_one;
+			WHEN "110" => temp_out <= neg_one;
+			WHEN "111" => temp_out <= zero;
+		END CASE;
+	END PROCESS;
+	
+	--After process is done, output will get the final answer from temp_out
+	mux_out <= temp_out;
+
+END behavior;

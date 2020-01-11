@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Lab 2/simulation/modelsim
+Ecomparator1
+Z1 w1550094847
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/intelFPGA_lite/18.1/Lab 2/Comparator1.vhd
+Z5 FC:/intelFPGA_lite/18.1/Lab 2/Comparator1.vhd
+l0
+L4
+V5`SLGoBIeHe;mA1]Bng=m2
+!s100 g;Pz2S6OCGH@T_Vz[H`H;3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1550769169
+!i10b 1
+Z8 !s108 1550769169.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 2/Comparator1.vhd|
+Z10 !s107 C:/intelFPGA_lite/18.1/Lab 2/Comparator1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R2
+R3
+DEx4 work 11 comparator1 0 22 5`SLGoBIeHe;mA1]Bng=m2
+l11
+L10
+VB3:DCz3OBaT]5:8Z;K0AE3
+!s100 ABL?T@iAZbDkhzQA_J:XC0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomparator16
+Z13 w1550097342
+R2
+R3
+R0
+Z14 8C:/intelFPGA_lite/18.1/Lab 2/Comparator16.vhd
+Z15 FC:/intelFPGA_lite/18.1/Lab 2/Comparator16.vhd
+l0
+L4
+V:Hh:^X20WRE`BbB93K?VA0
+!s100 jjik6MI7fHCBe^OFN=WO_3
+R6
+31
+Z16 !s110 1550769170
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 2/Comparator16.vhd|
+Z18 !s107 C:/intelFPGA_lite/18.1/Lab 2/Comparator16.vhd|
+!i113 1
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 12 comparator16 0 22 :Hh:^X20WRE`BbB93K?VA0
+l27
+L10
+V^:RT=;K;Lj:R7odQUJ4KG2
+!s100 U<mJa@f<z^jIGLz:Ibg_10
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Ecomparator16_vhd_tst
+Z19 w1550098747
+R2
+R3
+R0
+Z20 8C:/intelFPGA_lite/18.1/Lab 2/simulation/modelsim/comparator16.vht
+Z21 FC:/intelFPGA_lite/18.1/Lab 2/simulation/modelsim/comparator16.vht
+l0
+L30
+V3ldaPi;kKVhJ0=[ch6B?g1
+!s100 Dfacj<TXm9im]SZlh]aWg1
+R6
+31
+R16
+!i10b 1
+Z22 !s108 1550769170.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Lab 2/simulation/modelsim/comparator16.vht|
+Z24 !s107 C:/intelFPGA_lite/18.1/Lab 2/simulation/modelsim/comparator16.vht|
+!i113 1
+R11
+R12
+Acomparator16_arch
+R2
+R3
+DEx4 work 20 comparator16_vhd_tst 0 22 3ldaPi;kKVhJ0=[ch6B?g1
+l45
+L32
+VHMzSJkVZ^89l6MIRAX53N0
+!s100 Kb^0Ca[P8k0`GaEZJ`XAA2
+R6
+31
+R16
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Egeneric_nand
+Z25 w1550094673
+R2
+R3
+R0
+Z26 8C:/intelFPGA_lite/18.1/Comparator Parts/generic_nand.vhd
+Z27 FC:/intelFPGA_lite/18.1/Comparator Parts/generic_nand.vhd
+l0
+L4
+VgfcOnO48W;;7IYkaz30>O3
+!s100 Pa?SGjhmhdB;<AAg_TD?@2
+R6
+31
+R7
+!i10b 1
+Z28 !s108 1550769168.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/18.1/Comparator Parts/generic_nand.vhd|
+Z30 !s107 C:/intelFPGA_lite/18.1/Comparator Parts/generic_nand.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 12 generic_nand 0 22 gfcOnO48W;;7IYkaz30>O3
+l13
+L11
+V4B?7G84nANfR?H675dBo=1
+!s100 JnXNIfO:bUgKjbjHZ9dV^0
+R6
+31
+R7
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12

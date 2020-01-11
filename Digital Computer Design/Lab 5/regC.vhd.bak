@@ -1,0 +1,9 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY regC IS
+	GENERIC(	N	: INTEGER := 8);
+	PORT(	shiftreg	: IN STD_LOGIC;
+			loadreg	: IN STD_LOGIC;
+			addreg	: IN STD_LOGIC;
+			

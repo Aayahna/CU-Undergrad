@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "O16",
+					"strict" : false
+				},
+				{
+					"name" : "A16[15]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[8]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[9]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[10]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[11]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[12]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[13]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A16[14]",
+					"strict" : false
+				},
+				{
+					"name" : "B16[14]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

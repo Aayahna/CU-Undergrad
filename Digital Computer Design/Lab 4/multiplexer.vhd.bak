@@ -1,0 +1,40 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY multiplexer IS
+	GENERIC(	N: INTEGER := 16);
+	
+	PORT(	sel	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+			reg0	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg1	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg2	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg3 	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg4	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg5	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg6	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			reg7	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			din 	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			g		: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			bout	: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+	);
+END multiplexer;
+
+ARCHITECTURE behavioral OF multiplexer IS
+BEGIN
+	mux: PROCESS (reg0,reg1,reg2,reg3,reg4,reg5,reg6,reg7,din,g,sel)
+	BEGIN
+		CASE sel IS
+			WHEN "0000" => bout <= reg0;
+			WHEN "0001" => bout <= reg1;
+			WHEN "0010" => bout <= reg2;
+			WHEN "0011" => bout <= reg3;
+			WHEN "0100" => bout <= reg4;
+			WHEN "0101" => bout <= reg5;
+			WHEN "0110" => bout <= reg6;
+			WHEN "0111" => bout <= reg7;
+			WHEN "1000" => bout <= din;
+			WHEN "1001" => bout <= g;
+			WHEN OTHERS => bout <= din;
+		END CASE;
+	END PROCESS mux;
+END behavioral;

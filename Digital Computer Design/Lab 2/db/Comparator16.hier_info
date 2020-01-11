@@ -1,0 +1,152 @@
+|Comparator16
+A16[0] => comparator1:G1:0:comparator_part1.A
+A16[1] => comparator1:G1:1:comparator_part1.A
+A16[2] => comparator1:G1:2:comparator_part1.A
+A16[3] => comparator1:G1:3:comparator_part1.A
+A16[4] => comparator1:G1:4:comparator_part1.A
+A16[5] => comparator1:G1:5:comparator_part1.A
+A16[6] => comparator1:G1:6:comparator_part1.A
+A16[7] => comparator1:G1:7:comparator_part1.A
+A16[8] => comparator1:G1:8:comparator_part1.A
+A16[9] => comparator1:G1:9:comparator_part1.A
+A16[10] => comparator1:G1:10:comparator_part1.A
+A16[11] => comparator1:G1:11:comparator_part1.A
+A16[12] => comparator1:G1:12:comparator_part1.A
+A16[13] => comparator1:G1:13:comparator_part1.A
+A16[14] => comparator1:G1:14:comparator_part1.A
+A16[15] => comparator1:G1:15:comparator_part1.A
+B16[0] => comparator1:G1:0:comparator_part1.B
+B16[1] => comparator1:G1:1:comparator_part1.B
+B16[2] => comparator1:G1:2:comparator_part1.B
+B16[3] => comparator1:G1:3:comparator_part1.B
+B16[4] => comparator1:G1:4:comparator_part1.B
+B16[5] => comparator1:G1:5:comparator_part1.B
+B16[6] => comparator1:G1:6:comparator_part1.B
+B16[7] => comparator1:G1:7:comparator_part1.B
+B16[8] => comparator1:G1:8:comparator_part1.B
+B16[9] => comparator1:G1:9:comparator_part1.B
+B16[10] => comparator1:G1:10:comparator_part1.B
+B16[11] => comparator1:G1:11:comparator_part1.B
+B16[12] => comparator1:G1:12:comparator_part1.B
+B16[13] => comparator1:G1:13:comparator_part1.B
+B16[14] => comparator1:G1:14:comparator_part1.B
+B16[15] => comparator1:G1:15:comparator_part1.B
+O16 << generic_nand:comparator_part2.output
+
+
+|Comparator16|comparator1:\G1:0:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:1:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:2:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:3:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:4:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:5:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:6:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:7:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:8:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:9:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:10:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:11:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:12:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:13:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:14:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|comparator1:\G1:15:comparator_part1
+A => C.IN0
+B => C.IN1
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comparator16|generic_nand:comparator_part2
+a[0] => result.IN0
+a[1] => result.IN1
+a[2] => result.IN1
+a[3] => result.IN1
+a[4] => result.IN1
+a[5] => result.IN1
+a[6] => result.IN1
+a[7] => result.IN1
+a[8] => result.IN1
+a[9] => result.IN1
+a[10] => result.IN1
+a[11] => result.IN1
+a[12] => result.IN1
+a[13] => result.IN1
+a[14] => result.IN1
+a[15] => result.IN1
+output <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+

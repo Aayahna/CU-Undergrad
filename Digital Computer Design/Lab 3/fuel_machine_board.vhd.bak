@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY fuel_machine_board IS
+	PORT(	SW: IN std_logic_vector(9 DOWNTO 0);
+			LEDR:	OUT std_logic_vector(9 DOWNTO 0);
+			KEY:	OUT std_logic_vector(3 DOWNTO 0)
+	);
+END fuel_machine_board;
+
+ARCHITECTURE structure OF fuel_machine_board IS
+
+	COMPONENT fuel_machine
+		PORT(	clk, resetn, w: IN std_logic;
+				z:	OUT std_logic
+		);
+	END COMPONENT;
+	
+BEGIN
+	dut: fuel_machine
+		PORT MAP(

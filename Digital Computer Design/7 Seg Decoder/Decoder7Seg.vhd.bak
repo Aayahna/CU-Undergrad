@@ -1,0 +1,9 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity Decoder7Seg is port(
+	c: IN std_logic_vector (4 downto 0);
+	o1,o2: OUT std_logic_vector (6 downto 0);
+);
+end Decoder7Seg;
+

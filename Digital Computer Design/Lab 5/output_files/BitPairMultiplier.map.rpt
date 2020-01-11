@@ -1,0 +1,523 @@
+Analysis & Synthesis report for BitPairMultiplier
+Fri Apr 12 10:54:19 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |bitpair_board|bitpair:BOARD|ctrl_fsm:CONTROLFSM|y
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: bitpair:BOARD
+ 13. Parameter Settings for User Entity Instance: bitpair:BOARD|regA:REGISTERA
+ 14. Parameter Settings for User Entity Instance: bitpair:BOARD|regB:REGISTERB
+ 15. Parameter Settings for User Entity Instance: bitpair:BOARD|regC:REGISTERC
+ 16. Parameter Settings for User Entity Instance: bitpair:BOARD|regD:REGISTERD
+ 17. Parameter Settings for User Entity Instance: bitpair:BOARD|adder:THEADDER
+ 18. Parameter Settings for User Entity Instance: bitpair:BOARD|mux5:FIVE2ONEMUX
+ 19. Parameter Settings for User Entity Instance: bitpair:BOARD|mux2:TWO2ONEMUX
+ 20. Parameter Settings for User Entity Instance: bitpair:BOARD|ctrl_fsm:CONTROLFSM
+ 21. Port Connectivity Checks: "bitpair:BOARD|mux5:FIVE2ONEMUX"
+ 22. Port Connectivity Checks: "bitpair:BOARD|adder:THEADDER"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Apr 12 10:54:19 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; BitPairMultiplier                           ;
+; Top-level Entity Name           ; bitpair_board                               ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 21                                          ;
+; Total pins                      ; 24                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; bitpair_board      ; BitPairMultiplier  ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                          ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; ctrl_fsm.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd      ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/mux2.vhd          ;         ;
+; mux5.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/mux5.vhd          ;         ;
+; FullAdder.vhd                    ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/FullAdder.vhd     ;         ;
+; adder.vhd                        ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/adder.vhd         ;         ;
+; regA.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/regA.vhd          ;         ;
+; regB.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/regB.vhd          ;         ;
+; regC.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/regC.vhd          ;         ;
+; regD.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/regD.vhd          ;         ;
+; bitpair.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd       ;         ;
+; bitpair_board.vhd                ; yes             ; User VHDL File  ; C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 23           ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 35           ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 9            ;
+;     -- 5 input functions                    ; 10           ;
+;     -- 4 input functions                    ; 6            ;
+;     -- <=3 input functions                  ; 10           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 21           ;
+;                                             ;              ;
+; I/O pins                                    ; 24           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 21           ;
+; Total fan-out                               ; 250          ;
+; Average fan-out                             ; 2.40         ;
++---------------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                  ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name   ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+---------------+--------------+
+; |bitpair_board                               ; 35 (0)              ; 21 (0)                    ; 0                 ; 0          ; 24   ; 0            ; |bitpair_board                                                                ; bitpair_board ; work         ;
+;    |bitpair:BOARD|                           ; 35 (0)              ; 21 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD                                                  ; bitpair       ; work         ;
+;       |adder:THEADDER|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|adder:THEADDER                                   ; adder         ; work         ;
+;          |FullAdder:FullAdder0|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|adder:THEADDER|FullAdder:FullAdder0              ; FullAdder     ; work         ;
+;          |FullAdder:FullAdderN|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|adder:THEADDER|FullAdder:FullAdderN              ; FullAdder     ; work         ;
+;          |FullAdder:\G_Adder:1:Adder_middle| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|adder:THEADDER|FullAdder:\G_Adder:1:Adder_middle ; FullAdder     ; work         ;
+;       |ctrl_fsm:CONTROLFSM|                  ; 8 (8)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|ctrl_fsm:CONTROLFSM                              ; ctrl_fsm      ; work         ;
+;       |mux5:FIVE2ONEMUX|                     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|mux5:FIVE2ONEMUX                                 ; mux5          ; work         ;
+;       |regA:REGISTERA|                       ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|regA:REGISTERA                                   ; regA          ; work         ;
+;       |regB:REGISTERB|                       ; 6 (6)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|regB:REGISTERB                                   ; regB          ; work         ;
+;       |regC:REGISTERC|                       ; 10 (10)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|regC:REGISTERC                                   ; regC          ; work         ;
+;       |regD:REGISTERD|                       ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |bitpair_board|bitpair:BOARD|regD:REGISTERD                                   ; regD          ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------+
+; State Machine - |bitpair_board|bitpair:BOARD|ctrl_fsm:CONTROLFSM|y ;
++----------+----------+---------+-------+--------+-------------------+
+; Name     ; y.FINISH ; y.SHIFT ; y.ADD ; y.LOAD ; y.RESET           ;
++----------+----------+---------+-------+--------+-------------------+
+; y.RESET  ; 0        ; 0       ; 0     ; 0      ; 0                 ;
+; y.LOAD   ; 0        ; 0       ; 0     ; 1      ; 1                 ;
+; y.ADD    ; 0        ; 0       ; 1     ; 0      ; 1                 ;
+; y.SHIFT  ; 0        ; 1       ; 0     ; 0      ; 1                 ;
+; y.FINISH ; 1        ; 0       ; 0     ; 0      ; 1                 ;
++----------+----------+---------+-------+--------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                      ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                        ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl[1]      ; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl ; yes                    ;
+; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl[0]      ; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl ; yes                    ;
+; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl[2]      ; bitpair:BOARD|ctrl_fsm:CONTROLFSM|sel_ctrl ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                                            ;                        ;
++----------------------------------------------------+--------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 21    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |bitpair_board|bitpair:BOARD|regB:REGISTERB|int_valueB[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |bitpair_board|bitpair:BOARD|regC:REGISTERC|int_valueC[0] ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |bitpair_board|bitpair:BOARD|mux5:FIVE2ONEMUX|Mux1        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; w              ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|regA:REGISTERA ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|regB:REGISTERB ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|regC:REGISTERC ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|regD:REGISTERD ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|adder:THEADDER ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|mux5:FIVE2ONEMUX ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 4     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|mux2:TWO2ONEMUX ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bitpair:BOARD|ctrl_fsm:CONTROLFSM ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bitpair:BOARD|mux5:FIVE2ONEMUX"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "bitpair:BOARD|adder:THEADDER" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 21                          ;
+;     CLR               ; 5                           ;
+;     ENA               ; 14                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 35                          ;
+;     normal            ; 35                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 9                           ;
+; boundary_port         ; 24                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.73                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr 12 10:53:44 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BitPairMultiplier -c BitPairMultiplier
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ctrl_fsm.vhd
+    Info (12022): Found design unit 1: ctrl_fsm-behavior File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 21
+    Info (12023): Found entity 1: ctrl_fsm File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
+    Info (12022): Found design unit 1: mux2-behavior File: C:/intelFPGA_lite/18.1/Lab 5/mux2.vhd Line: 12
+    Info (12023): Found entity 1: mux2 File: C:/intelFPGA_lite/18.1/Lab 5/mux2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mux5.vhd
+    Info (12022): Found design unit 1: mux5-behavior File: C:/intelFPGA_lite/18.1/Lab 5/mux5.vhd Line: 16
+    Info (12023): Found entity 1: mux5 File: C:/intelFPGA_lite/18.1/Lab 5/mux5.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
+    Info (12022): Found design unit 1: FullAdder-dataflow File: C:/intelFPGA_lite/18.1/Lab 5/FullAdder.vhd Line: 10
+    Info (12023): Found entity 1: FullAdder File: C:/intelFPGA_lite/18.1/Lab 5/FullAdder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
+    Info (12022): Found design unit 1: adder-structure File: C:/intelFPGA_lite/18.1/Lab 5/adder.vhd Line: 16
+    Info (12023): Found entity 1: adder File: C:/intelFPGA_lite/18.1/Lab 5/adder.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file rega.vhd
+    Info (12022): Found design unit 1: regA-mixed File: C:/intelFPGA_lite/18.1/Lab 5/regA.vhd Line: 17
+    Info (12023): Found entity 1: regA File: C:/intelFPGA_lite/18.1/Lab 5/regA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file regb.vhd
+    Info (12022): Found design unit 1: regB-mixed File: C:/intelFPGA_lite/18.1/Lab 5/regB.vhd Line: 16
+    Info (12023): Found entity 1: regB File: C:/intelFPGA_lite/18.1/Lab 5/regB.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file regc.vhd
+    Info (12022): Found design unit 1: regC-behavioral File: C:/intelFPGA_lite/18.1/Lab 5/regC.vhd Line: 18
+    Info (12023): Found entity 1: regC File: C:/intelFPGA_lite/18.1/Lab 5/regC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file regd.vhd
+    Info (12022): Found design unit 1: regD-mixed File: C:/intelFPGA_lite/18.1/Lab 5/regD.vhd Line: 13
+    Info (12023): Found entity 1: regD File: C:/intelFPGA_lite/18.1/Lab 5/regD.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bitpair.vhd
+    Info (12022): Found design unit 1: bitpair-structure File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 17
+    Info (12023): Found entity 1: bitpair File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bitpair_board.vhd
+    Info (12022): Found design unit 1: bitpair_board-structure File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 11
+    Info (12023): Found entity 1: bitpair_board File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 4
+Info (12127): Elaborating entity "bitpair_board" for the top level hierarchy
+Info (12128): Elaborating entity "bitpair" for hierarchy "bitpair:BOARD" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 32
+Warning (10036): Verilog HDL or VHDL warning at bitpair.vhd(112): object "zeroM5" assigned a value but never read File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 112
+Info (12128): Elaborating entity "regA" for hierarchy "bitpair:BOARD|regA:REGISTERA" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 140
+Info (12128): Elaborating entity "regB" for hierarchy "bitpair:BOARD|regB:REGISTERB" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 144
+Info (12128): Elaborating entity "regC" for hierarchy "bitpair:BOARD|regC:REGISTERC" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 148
+Info (12128): Elaborating entity "regD" for hierarchy "bitpair:BOARD|regD:REGISTERD" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 152
+Warning (10540): VHDL Signal Declaration warning at regD.vhd(18): used explicit default value for signal "int_zero" because signal was never assigned a value File: C:/intelFPGA_lite/18.1/Lab 5/regD.vhd Line: 18
+Info (12128): Elaborating entity "adder" for hierarchy "bitpair:BOARD|adder:THEADDER" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 156
+Info (12128): Elaborating entity "FullAdder" for hierarchy "bitpair:BOARD|adder:THEADDER|FullAdder:\G_Adder:0:Adder_middle" File: C:/intelFPGA_lite/18.1/Lab 5/adder.vhd Line: 34
+Info (12128): Elaborating entity "mux5" for hierarchy "bitpair:BOARD|mux5:FIVE2ONEMUX" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 160
+Info (12128): Elaborating entity "mux2" for hierarchy "bitpair:BOARD|mux2:TWO2ONEMUX" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 164
+Info (12128): Elaborating entity "ctrl_fsm" for hierarchy "bitpair:BOARD|ctrl_fsm:CONTROLFSM" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair.vhd Line: 168
+Warning (10492): VHDL Process Statement warning at ctrl_fsm.vhd(84): signal "start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at ctrl_fsm.vhd(95): signal "sel_b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at ctrl_fsm.vhd(112): signal "sel_b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 112
+Warning (10631): VHDL Process Statement warning at ctrl_fsm.vhd(73): inferring latch(es) for signal or variable "sel_ctrl", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 73
+Info (10041): Inferred latch for "sel_ctrl[0]" at ctrl_fsm.vhd(73) File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 73
+Info (10041): Inferred latch for "sel_ctrl[1]" at ctrl_fsm.vhd(73) File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 73
+Info (10041): Inferred latch for "sel_ctrl[2]" at ctrl_fsm.vhd(73) File: C:/intelFPGA_lite/18.1/Lab 5/ctrl_fsm.vhd Line: 73
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 5
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 6
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/intelFPGA_lite/18.1/Lab 5/bitpair_board.vhd Line: 6
+Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 41 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4915 megabytes
+    Info: Processing ended: Fri Apr 12 10:54:19 2019
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:53
+
+

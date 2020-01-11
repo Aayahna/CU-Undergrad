@@ -1,0 +1,107 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:32 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Full Adder/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture dataflow of FullAdder
+# End time: 17:00:33 on Feb 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:33 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/4 Bit Ripple Carry Adder/RCA4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RCA4
+# -- Compiling architecture structure of RCA4
+# End time: 17:00:33 on Feb 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:33 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/7 Seg Decoder/Decoder7Seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder7Seg
+# -- Compiling architecture behavioral of Decoder7Seg
+# End time: 17:00:33 on Feb 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/BCD/BCD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:33 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/BCD/BCD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BCD
+# -- Compiling architecture behavioral of BCD
+# End time: 17:00:33 on Feb 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 1/BCDadder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:33 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 1/BCDadder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BCDadder
+# -- Compiling architecture structure of BCDadder
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/BCDadder.vhd(44): Cannot associate port "s" of mode OUT with port "S_Cout" of mode BUFFER.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/BCDadder.vhd(44): Cannot associate port "cout" of mode OUT with port "S_Cout" of mode BUFFER.
+# End time: 17:00:33 on Feb 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:33 on Feb 07,2019
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BCDadder_vhd_tst
+# -- Compiling architecture BCDadder_arch of BCDadder_vhd_tst
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: C:/intelFPGA_lite/18.1/Lab 1/simulation/modelsim/BCDadder.vht(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 17:00:34 on Feb 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  BCDadder_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" BCDadder_vhd_tst 
+# Start time: 17:00:34 on Feb 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bcdadder_vhd_tst(bcdadder_arch)
+# Loading work.bcdadder(structure)
+# Loading work.rca4(structure)
+# Loading work.fulladder(dataflow)
+# Loading work.bcd(behavioral)
+# Loading work.decoder7seg(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 17:08:13 on Feb 07,2019, Elapsed time: 0:07:39
+# Errors: 0, Warnings: 0

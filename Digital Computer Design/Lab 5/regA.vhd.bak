@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY regA IS
+	GENERIC(	N	: INTEGER := 8);
+	PORT(	multiplicand	: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			zero				: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			pos_one			: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			neg_one			: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0);
+			pos_two			: OUT STD_LOGIC_VECTOR (N DOWNTO 0);
+			neg_two			: OUT STD_LOGIC_VECTOR (N DOWNTO 0)
+	);
+END regA;
+
+ARCHITECTURE behavior OF regA IS
+BEGIN
+	
+	zero <= (OTHERS => '0');
+	
+	pos_one <= multiplicand;
+	
+	neg_one <= NOT(multiplicand) + 1; --CAN I DO THIS
+	
+	pos_two(N DOWNTO 1) <= multiplicand;
+	pos_two(0) <= '0';
+	
+	neg_two(N DOWNTO 1) <= NOT(multiplicand) + 1;
+	neg_two(0) <= '0';
+	
+END behavior;
