@@ -1,0 +1,28 @@
+%{
+#include "lambda1.tab.h"
+%}
+
+%option nounput
+%option noinput
+
+ID [a-z]+
+A_NUM [0-9]+
+FUN "fun"[0-9]+
+LAMBDA "lambda"
+%%
+[ \r\t\n]+ /* whitespace */
+
+"(" return LPARENS;
+
+")" return RPARENS;
+
+"." return PERIOD;
+
+{LAMBDA} return LAMBDA;
+
+{ID} return ID;
+
+{A_NUM} return NUM;
+
+{FUN} return FUN;
+%%

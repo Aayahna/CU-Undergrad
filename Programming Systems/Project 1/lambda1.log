@@ -1,0 +1,145 @@
+----------------------------*Success Test Cases*--------------------------------
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t0.lc 
+fun100
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t0.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a constant
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t1.lc 
+((lambda x.(fun1 x)) 100)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t1.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a combination
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t2.lc 
+(((lambda x.(lambda y.(x y))) fun2) 3)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t2.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a combination
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t3.lc 
+(lambda x . (fun9 x))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t3.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is an abstraction
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t4.lc 
+(lambda x . (lambda y . (lambda z . (fun0 z))))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t4.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is an abstraction
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t5.lc 
+((fun1 fun2) (fun3 fun4))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t5.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a combination
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t6.lc 
+apple
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t6.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a variable
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t7.lc 
+3
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t7.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a constant
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t8.lc 
+(food drinks)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t8.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is a combination
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t9.lc 
+(lambda x.100)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t9.lc 
+
+Parse for syntactically correct lambda-calculus expression was successful:
+
+	The overall expression is an abstraction
+
+------------------------------*Fail Test Cases*---------------------------------
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t0bad.lc 
+func100
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t0bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t1bad.lc 
+((lambda x.(fun1 x)) .x)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t1bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t2bad.lc 
+(((lambda x.(lambda y.(x y))) f2) 3)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t2bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t3bad.lc 
+(lambda (x. (fun9 x)))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t3bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t4bad.lc 
+(lambda x . (lambda y . (fun0 z))))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t4bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t5bad.lc 
+((fun1 fu2) (fun3 fun))
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t5bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t6bad.lc 
+appl3
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t6bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t7bad.lc 
+24553l23452
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t7bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t8bad.lc 
+food drinks)
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t8bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ cat t9bad.lc 
+lambda x.100
+aayahna@aayahna-VirtualBox:~/Dropbox/ece3520/sde1$ ./lambda1 < t9bad.lc 
+
+Sorry, Charlie: Not everybody can be a lambda expression!
+
+--------------------------------------------------------------------------------

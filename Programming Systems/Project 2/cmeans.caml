@@ -1,0 +1,184 @@
+open List;;
+
+(* Prototype: distanceR2(v1,v2)
+	
+	Inputs: vectors v1 and v2
+	Output: distance (squared) between 2 vectors of arbitrary (but same)
+			dimension
+	Side Effects: none
+*)
+let rec distanceR2 = function(v1, v2) ->
+if (v1 = []) || (v2 = []) then 0. 
+	else ((hd v2 -. hd v1) *. (hd v2 -. hd v1)) +. distanceR2(tl v1, tl v2);;
+
+(* Prototype: distanceSqAllMeans(v,vset)
+	
+	Inputs: a vector and a set of vectors (represented as lists)
+	Output: a vector of the distances from v to each element of vset
+	Side Effects: none
+*)
+let rec distanceSqAllMeans = function(v, vset) ->
+if (v = []) || (vset = []) then [] 
+	else distanceR2(v, hd vset)::distanceSqAllMeans(v, tl vset);;
+
+(* Prototype: listMinNum(alist)
+	
+	Inputs: a list
+	Output: a minimum number from the list
+	Side Effects: none
+	
+	HELPER FUNCTION
+*)	
+let rec listMinNum = function(alist) ->
+if (length alist = 1) then hd alist 
+	else min (hd alist) (listMinNum(tl alist));;
+
+(* Prototype: listMinIndex(alist,minNum)
+	
+	Inputs: a list and the minimum number from the list
+	Output: index number of the minimum number from the list
+	Side Effects: none
+	
+	HELPER FUNCTION
+*)	
+let rec listMinIndex = function(alist, minNum) ->
+if (length alist > 0) && (hd alist = minNum) 
+then (length alist) - (listMinIndex(tl alist, minNum))
+	else if (length alist = 0) then 1
+		else listMinIndex(tl alist, minNum) + 1;;
+
+(* Prototype: listMinPos(alist)
+	
+	Inputs: alist
+	Output: position (0-based indexing) of the minimum in the list
+	Side Effects: none
+*)
+let rec listMinPos = function(alist) ->
+	listMinIndex(alist, listMinNum(alist));;
+
+(* Prototype: elsum(l1,l2)
+	
+	Inputs: lists l1 and l2
+	Output: vector addition of l1 and l2
+	Side Effects: none
+*)
+let rec elsum = function(l1, l2) ->
+if (l1 = []) || (l2 = []) then [] 
+	else (hd l1 +. hd l2)::elsum(tl l1, tl l2);;
+
+(* Prototype: scaleList(l1,scale)
+	
+	Inputs: list l1, scale factor
+	Output: l1 with each element divided by scale
+	Side Effects: none
+*)
+let rec scaleList = function(l1, scale) ->
+if (l1 = []) || (scale = 0) then [] 
+	else ((hd l1) /. (float_of_int)scale)::scaleList(tl l1, scale);;
+
+(* Prototype: zeroes(size)
+	
+	Inputs: size
+	Output: list of zeroes of length size
+	Side Effects: none
+*)
+let rec zeroes = function(size) ->
+if (size <= 0) then [] 
+	else 0.::zeroes(size-1);;
+
+(* Prototype: zeroMeansSet(c,d)
+	
+	Inputs: c,d
+	Output: a list of c lists (means set) all zeros each with dim=d
+	Side Effects: none
+*)
+let rec zeroMeansSet = function(c, d) ->
+if (c <= 0) then [] 
+	else zeroes(d)::zeroMeansSet(c-1, d);;
+
+(* Prototype: zeroVdiff(v1,v2)
+	
+	Inputs: vectors v1 and v2
+	Output: true if v1 and v2 are the same; false otherwise
+	Side Effects: none
+*)
+let rec zeroVdiff = function(v1, v2) ->
+if (v1 = []) || (v2 = []) then true
+	else if (hd v1 = hd v2) && (tl v1 = tl v2) then true 
+		else false;;
+
+(* Prototype: zeroSetDiff(s1,s2)
+	
+	Inputs: list-of-lists s1 and s2
+	Output: true if s1 and s2 are equal; false otherwise
+	Side Effects: none
+*)
+let rec zeroSetDiff = function(s1, s2) ->
+if (s1 = []) || (s2 = []) then true
+	else if (zeroVdiff(hd s1, hd s2) = true) && (zeroVdiff(tl s1, tl s2) = true) then true
+		else false;;
+
+(* Prototype: zeroCounts(c)
+	
+	Inputs: c
+	Output: list of c elements, each 0
+	Side Effects: none
+*)
+let rec zeroCounts = function(c) ->
+if (c <= 0) then [] 
+	else 0::zeroCounts(c-1);;
+
+(* Prototype: updateCounts(p,counts)
+	
+	Inputs: p, counts
+	Output: updated counts list with element p incremented by 1
+	Side Effects: none
+*)	
+let rec updateCounts = function(p, counts) ->
+if (counts = []) then [] 
+	else if (p = 0) then (hd counts + 1)::updateCounts(p-1, tl counts) 
+		else (hd counts)::updateCounts(p-1, tl counts);;
+
+(* Prototype: updateMeansSum(v,x,means)
+	
+	Inputs: v, x, means (the current c cluster sums)
+	Output: means with v added to the vector in means at position x
+	Side Effects: none
+*)
+let rec updateMeansSum = function(v, x, means) ->
+if (v = []) || (means = []) then [] 
+	else if (x = 0) then elsum(v, hd means)::updateMeansSum(v, x-1, tl means) 
+		else (hd means)::updateMeansSum(v, x-1, tl means);;
+
+(* Prototype: formNewMeans(newmeanssum, newcounts)
+	
+	Inputs: list of newcluster sums, list of curresponding new cluster member
+			counts
+	Output: list of new means
+	Side Effects: none
+*)		
+let rec formNewMeans = function(newmeanssum, newcounts) ->
+if (newmeanssum = []) || (newcounts = []) then [] 
+	else scaleList(hd newmeanssum, hd newcounts)::formNewMeans(tl newmeanssum, tl newcounts);;	
+
+(* Prototype: reclassify(h, currmeans, newmeanssum, newcounts)
+	
+	Inputs: h, currmeans, newmeanssum, newcounts
+	Output: new (updated) means from reclassification of h using current means
+	Side Effects: none
+*)
+let rec reclassify = function(h, currmeans, newmeanssum, newcounts) ->	
+if (h = []) then formNewMeans(newmeanssum, newcounts) 
+	else reclassify(tl h, currmeans, updateMeansSum(hd h, listMinPos(distanceSqAllMeans(hd h, currmeans)), newmeanssum), updateCounts(listMinPos(distanceSqAllMeans(hd h, currmeans)), newcounts));;		
+
+(* Prototype: cmeans(c, h, mucurrent)
+	
+	Inputs: c, h, mucurrent
+	Output: final c-means (as a list of means lists)
+	Side Effects: none
+*)
+let rec cmeans = function(c, h, mucurrent) ->
+if (zeroSetDiff(mucurrent, reclassify(h, mucurrent, zeroMeansSet(c, length mucurrent), zeroCounts(c))) = true) then mucurrent 
+	else cmeans(c, h, reclassify(h, mucurrent, zeroMeansSet(c, length mucurrent), zeroCounts(c)));;
+
+
